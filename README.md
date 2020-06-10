@@ -1,3 +1,3 @@
-20203078-SeoMinHo
+20203078	SeoMinHo
 Kookmin Univ. SW
 
