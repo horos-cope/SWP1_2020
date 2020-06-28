@@ -10,8 +10,8 @@ def application(environ, start_response):
         a, b = int(a), int(b)
         add = a+b
         mul = a*b
-        #add와 mul을 저장.
-    response_body = html
+        
+    response_body = html % {'sum':sum, 'mul'mul}
     start_response('200 OK', [
         ('Content-Type', 'text/html'),
         ('Content-Length', str(len(response_body)))

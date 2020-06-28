@@ -6,6 +6,7 @@ html = b"""
             b = <input type="number" name = "b"><br><br>
             <input type="submit">
         </form>
-        #저장한 add와 mul을 출력
+        Sum = %(sum)d <br><br>
+	Mul = %(mul)d
     </body>
 </html>
