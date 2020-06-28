@@ -10,3 +10,4 @@ html = b"""
 	Mul = %(mul)d
     </body>
 </html>
+"""
