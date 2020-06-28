@@ -8,11 +8,13 @@ def application(environ, start_response):
 
     sum, mul = -2147483648, -2147483648 
 
-    if '' in [a,b]:
+    try:
         a, b = int(a), int(b)
         sum = a+b
         mul = a*b
-        
+    except ValueError:
+	sum = -2147483647
+	mul = -2147483647    
     response_body = html % {'sum':sum, 'mul':mul}
     start_response('200 OK', [
         ('Content-Type', 'text/html'),
